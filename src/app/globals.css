@@ -4,30 +4,196 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: #393939;
+  --background-end-rgb: #181818;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: #393939;
+    --background-end-rgb: #181818;
   }
 }
 
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+} */
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom,
+      var(--background-end-rgb), var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* .container {
+  background-image: linear-gradient(#393939, #181818);
+} */
+
+.btn-play {
+  margin-top: 24px;
+  background-color: #55BA55;
+  padding: 10px 50px;
+  letter-spacing: 2px;
+  border-radius: 26px;
+  font-weight: 800;
+  margin-right: 20px;
+  color: #E7F6ED;
+}
+
+.playlist-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #9C9C9C;
+}
+
+.playlist-name {
+  font-weight: 800;
+  font-size: 4rem;
+  color: #FFFFFF;
+}
+
+.playlist-description {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #9C9C9C;
+}
+
+.playlist-createdBy {
+  margin-top: 24px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #9C9C9C;
+}
+
+.playlist-creator {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #EEE;
+}
+
+.three-dots {
+  position: relative;
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  color: white;
+  border-radius: 50%;
+  border-width: 2px;
+}
+
+.three-dots:after {
+  content: '•••';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: white;
+  letter-spacing: 4px;
+  margin-top: 2px;
+}
+
+.dot-outside {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  border-width: 2px;
+  border-radius: 9999px;
+  width: 50px;
+}
+
+.dot-inside {
+  color: rgb(229 231 235);
+  text-align: center;
+  padding: 10px;
+  border-radius: 9999px;
+  width: 10px;
+}
+
+.follower-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #9C9C9C;
+}
+
+.follolwer-total {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #9C9C9C;
+}
+
+.btn-download {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #9C9C9C;
+}
+
+.dropdown-list {
+  border-color: #181818;
+}
+
+.menu-list {
+  background-color: #282828;
+  color: #959595;
+}
+
+
+.search-input {
+  background-color: #2A2A2A;
+  color: #C0C0C0;
+}
+
+.search-icon {
+  color: #C0C0C0;
+}
+
+
+.playlist:hover {
+  background-color: #5A5A5A;
+  border-radius: 4px;
+}
+
+.btn-add {
+  font-size: 400;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  border-width: 2px;
+  border-color: #fff;
+  padding: 4px 16px 4px 16px;
+  border-radius: 40px;
+}
+
+.clock-icon {
+  color: #C0C0C0;
+}
+
+.player-header {
+  border-bottom: 1px solid hsla(0, 0%, 100%, .1)
+}
+
+.sidebar-playlist-name {
+  color: #fff;
+  text-align: left;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.sidebar-playlist-creator {
+  color: #b3b3b3;
+  text-align: left;
+  font-weight: 400;
+  font-size: 0.875rem;
 }
