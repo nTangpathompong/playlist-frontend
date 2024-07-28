@@ -44,7 +44,7 @@ const DropDown: React.FC<IDropDown> = ({ playlistId, data, deletePlayList }) => 
       </button>
       {isOpen && playlistId ?
         <>
-          <div id="dropdownDivider" className={`absolute dropdown-list z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 ${isOpen ? 'block' : 'hidden'}`}>
+          <div id="dropdownDivider" className={`absolute dropdown-list z-10 bg-white divide-y divide-gray-100 rounded-md shadow w-44 dark:bg-gray-700 dark:divide-gray-600 ${isOpen ? 'block' : 'hidden'}`}>
             <ul className="menu-list py-2 text-sm" aria-labelledby="dropdownDividerButton">
               <li>
                 <button className="block px-4 py-2 text-zinc-600 cursor-not-allowed" disabled>Go to Playlist Radio</button >

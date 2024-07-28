@@ -86,7 +86,7 @@ const PlaylistDetail: React.FC<IPlaylistDetail> = ({ playlistId, deletePlayList,
             <div className="follower-title">
               Follower
             </div>
-            <div className="follower-total text-right">
+            <div className="follower-title text-right">
               10
             </div>
           </div>

@@ -22,9 +22,13 @@ const Tracks: React.FC<ITracks> = ({ addToPlaylist }) => {
     getTrack(search)
   }, [search])
   return (
-    <div>
-      <div className='flex flex-row justify-between mt-4'>
+    <div className='track-header mt-6'>
+      <div className='flex flex-row justify-between '>
         <div >
+
+          <div className='find-text'>
+            Let's find something for your playlist
+          </div>
           <div className="relative">
             <input type="text" onChange={(e) => setSearch(e.target.value)} value={search}
               className="pl-10 pr-4 py-2 border rounded-lg search-input"
