@@ -88,7 +88,7 @@ export default function Home() {
   }, [playlists])
 
   return (
-    <div className="flex h-screen bg-gray-900 text-white">
+    <div className="flex h-screen text-white">
       {/* Sidebar */}
       <Sidebar selectPlaylist={setPlaylistId} playlists={playlists} addPlayList={addPlayList} />
       <div className="flex-1 p-8 overflow-y-auto">

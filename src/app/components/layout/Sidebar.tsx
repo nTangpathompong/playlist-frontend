@@ -12,7 +12,7 @@ const Sidebar: React.FC<ISidebar> = ({ selectPlaylist, playlists, addPlayList })
     selectPlaylist(id)
   }
   return (
-    <div className="w-64 bg-gray-800 p-4">
+    <div className="w-64 side-bar p-4">
       <div className="flex flex-row justify-between mb-4">
         <h2 className="text-lg font-bold">Your Library</h2>
         <button type="button" onClick={addPlayList}>

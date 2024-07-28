@@ -32,7 +32,7 @@ const DropDownManage: React.FC<IDropDown> = ({ deleteFromPlaylist, trackId }) =>
       <div id="dropdownDivider" className={`absolute right-1 dropdown-list z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 ${isOpen ? 'block' : 'hidden'}`}>
         <ul className="menu-list py-2 text-sm" aria-labelledby="dropdownDividerButton">
           <li>
-            <a href="#" className="block px-4 py-2 hover:bg-gray-400 hover:text-gray-700 dark:hover:text-white" onClick={() => deleteFromPlaylist(trackId)}>Delete</a>
+            <a href="#" className="block px-4 py-2 dropdown-menu" onClick={() => deleteFromPlaylist(trackId)}>Delete</a>
           </li>
         </ul>
       </div>

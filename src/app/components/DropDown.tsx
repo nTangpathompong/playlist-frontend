@@ -66,7 +66,7 @@ const DropDown: React.FC<IDropDown> = ({ playlistId, data, deletePlayList }) => 
                 <button className="block text-zinc-600 px-4 py-2  cursor-not-allowed" disabled>Report</button>
               </li>
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-400 hover:text-gray-700" onClick={() => deletePlayList(playlistId)}>Delete</a>
+                <a href="#" className="block px-4 py-2 dropdown-menu" onClick={() => deletePlayList(playlistId)}>Delete</a>
               </li>
             </ul>
             <ul className="menu-list py-2 text-sm" aria-labelledby="dropdownDividerButton">
